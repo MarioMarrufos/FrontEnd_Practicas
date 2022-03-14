@@ -1,23 +1,143 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pasteles Dulces y Salados</title>
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <body>
-      <div style="align:center;">
-        <div>
-          <img src="PASTELITOS.png" alt="PASTELES DULCES Y SALADOS LOGO" />
-        </div>
-      </div>
-      <div class="containerFlex">
-     
-        <div class="border"><a href="cliente.html">Cliente</a></div>
-   
-        <div class="border"><a href="chef.html">Chef<a></div>
-    </div>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasteles dulces y salados</title>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+overflow: hidden;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+/* Style the content */
+.content2 {
+  background-color: #ddd;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img width="50%" src="PASTELITOS.png" alt="PASTELES DULCES Y SALADOS LOGO" />
+</div>
+
+<div class="topnav">
+  <a href="#">Inicio</a>
+  <a href="pastelero.html">Soy Pastelero</a>
+</div>
+
+<div class="content">
+  <h2>Sabores de pastel base</h2>
+  <ul>
+  <li>1 Leche ......$100</li>
+  <li>2 Leches ......$200</li>
+  <li>3 Leches ......$300</li>
+  <li>Queso philadelpia ......$150</li>
+  <li>Queso de bola standar ......$200</li>
+  <li>Queso de bola special ......$300</li>
+  </ul>
+<h2>Tipo de adorno</h2>
+  <ul>
+  <li>Vela en forma de matrimonio ......$50</li>
+  <li>Vela en forma de número ......$30</li>
+  <li>Vela con polvora ......$100</li>
+  <li>Chispas de chocolate ......$70</li>
+  <li>Merengue ......$50</li>
+  </ul>
+  
+  <h2>Hagalo usted mismo</h2>
+   <form action="#" method="post">
+   			<div>
+                <select id="sabor_base" name="sabor_base">
+                    <option disabled selected>Seleccione una base</option>
+                    <option value="1">1 Leche</option>
+                    <option value="2">2 Leches</option>
+                    <option value="3">3 Leches</option>
+                    <option value="3">Queso philadelpia</option>
+                    <option value="3">Queso de bola standar</option>
+                    <option value="4">Queso de bola special</option>
+                </select>
+                <select id="adorno" name="adorno">
+                    <option disabled selected>Seleccione adorno</option>
+                    <option value="1">Vela en forma de matrimonio</option>
+                    <option value="2">Vela en forma de número</option>
+                    <option value="3">Vela con polvora</option>
+                    <option value="4">Chispas de chocolate</option>
+                    <option value="5">Vela con polvora</option>
+                    <option value="6">Merengue</option>
+                </select>
+            </div>
+            <label for="nombre">Nombre </label><br>
+            <input type="text" id="nombre"><br>
+             <label for="telefono">Teléfono </label><br>
+            <input type="text" id="telefono"><br>
+            <label for="correo">Correo electrónico </label><br>
+            <input type="email" id="correo"><br>
+           
+            <label for="message">Descripción general del pastel</label>
+            <br>
+            <textarea name="describe" id="describe" cols="20" rows="10" placeholder="Describa más a detalle como le encantaría su pastel"></textarea>
+            <br>
+            <button>Enviar</button>
+        </form>
+
+<div class="footer">
+  <p>&#9400Pastelería Dulces y Salados. Todos los derechos reservados</p>
+</div>
+
+</body>
 </html>
